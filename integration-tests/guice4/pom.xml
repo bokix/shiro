@@ -31,10 +31,6 @@
 	<name>Apache Shiro :: ITs :: Guice 4</name>
 	<packaging>war</packaging>
 
-	<properties>
-		<guice.version>4.1.0</guice.version>
-	</properties>
-
 	<build>
 	    <plugins>
 			<plugin>
@@ -55,9 +51,14 @@
 
 	<dependencies>
 	    <dependency>
-	        <groupId>javax.servlet</groupId>
-	        <artifactId>jstl</artifactId>
-			<scope>compile</scope>
+		<groupId>org.apache.taglibs</groupId>
+		<artifactId>taglibs-standard-spec</artifactId>
+		<scope>compile</scope>
+	    </dependency>
+	    <dependency>
+		<groupId>org.apache.taglibs</groupId>
+		<artifactId>taglibs-standard-impl</artifactId>
+		<scope>compile</scope>
 	    </dependency>
 	    <dependency>
 	        <groupId>javax.servlet</groupId>
